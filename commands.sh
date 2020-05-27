@@ -1,9 +1,22 @@
 #!/bin/bash
 
-#ls -l ~/scripts/commands/
+#COMMAND=@Commands
+#TITLE=Displays and manages all active commands
 
+#@HELP -> Displays this help menu for this command
+help() {
+	#Pulls the help files from this command
+	CMD=$(grep -e '^#COMMAND' $BASH_SOURCE | sed 's/#COMMAND=//g')
+	echo ""
+	echo "~~ $CMD Help Menu ~~"
+	echo "----------------------------------"
+	grep -e '^#@' $BASH_SOURCE | sed 's/#@//g'
+	echo ""
+	echo "Example: @commands add dock"
+	echo ""
+}
 
-# NO Args - Just list commands
+#@BLANK -> Displays the list of commands
 list() {
 	echo "---------------"
 	echo "  COMMANDS  "
@@ -15,7 +28,7 @@ list() {
 		# Create a quiet flag
 }
 
-# add ARG - function add() 
+#@ADD -> Adds a new command
 add() {
 	#check for new name
 	if [ -z "$1" ]
@@ -38,6 +51,7 @@ add() {
 	source ~/.bashrc
 }
 
+#@EDIT -> Edits a command supplied
 edit() {
 	#check for new name
 	if [ -z "$1" ]
@@ -53,6 +67,7 @@ edit() {
 
 }
 
+#@DELETE -> Deletes a command supplied
 delete() {
 	#check for new name
 	if [ -z "$1" ]
@@ -79,6 +94,7 @@ case $1 in
 	add) add "$2" ;;
 	delete) delete "$2" ;;
 	edit) edit "$2" ;;
+	help) help ;;
 	*) list ;;
 esac
 
