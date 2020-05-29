@@ -54,7 +54,7 @@ webtron @ 03:35:18 in ~/scripts/commands
    :> @wifi connect
 Successfully initialized wpa_supplicant
 Connecting to SSID...
-Connected @ IP: 10.0.0.33
+Connected to Massedonia@10.0.0.33
 
 ```
 ## Screenshots
