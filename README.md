@@ -10,17 +10,17 @@ In comes @commands!
 Unfortunately, there is no nice package for this since I just started developing it like 10 days ago, but some of it is working and I already love it. 
 
 ## Commands
-  - `@commands` - This lists all the commands that are built
-    - `add` - This adds a command to the list
-    - `edit` - This just opens the command for editing
-    - `delete` - This deletes the commands and updates the aliases
-  - `@wifi` - This shows the status of the wifi
-    - `connect` - This will force the laptop to connect to wifi
-    - `disconnect` - This turns the wifi interface off
-  - `@dock` - This sets the layout of the screens to how my external monitors are setup
-  - `@undock` - Pretty much the same, but also messes with scaling since the Surface has HiDP
-  - `@devmode` - Opens and moves windows around into work layout
-  - `@stream` - Same as devmode, but for gaming/streaming
+  - `@commands` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - This lists all the commands that are built 
+    - `add` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - This adds a command to the list 
+    - `edit` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - This just opens the command for editing 
+    - `delete` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - This deletes the commands and updates the aliases 
+  - `@wifi` [![status](https://img.shields.io/badge/status-partial-yellow)]() - This shows the status of the wifi 
+    - `connect` [![status](https://img.shields.io/badge/status-partial-yellow)]() - This will force the laptop to connect to wifi 
+    - `disconnect` [![status](https://img.shields.io/badge/status-todo-blue)]() - This turns the wifi interface off 
+  - `@dock` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - This sets the layout of the screens to how my external monitors are setup 
+  - `@undock` [![status](https://img.shields.io/badge/status-working-brightgreen)]() - Pretty much the same, but also messes with scaling since the Surface has HiDP 
+  - `@devmode` [![status](https://img.shields.io/badge/status-todo-blue)]() - Opens and moves windows around into work layout 
+  - `@stream` [![status](https://img.shields.io/badge/status-todo-blue)]() - Same as devmode, but for gaming/streaming 
 
 All commands have a `help` flag which will dynamically get the command's oiptions and print them to screen. 
   
