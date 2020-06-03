@@ -1,6 +1,9 @@
 ### Obligatory Warning
 I am super new to bash and Arch (like 2 weeks new) so this code is probably horrible. Also sorry about the comments.
 
+This is very specific to my environment right now. You will need to change variables and commands based on what you have installed or hardware you are using. 
+Thanks!
+
 ----
 ## Introduction
 I really like using the terminal for everything (hence my move to Arch), but I was having a hard time remembering all the commands to do little things like connect to wifi and such. 
@@ -51,7 +54,7 @@ webtron @ 03:35:18 in ~/scripts/commands
    :> @wifi connect
 Successfully initialized wpa_supplicant
 Connecting to SSID...
-Connected @ IP: 10.0.0.33
+Connected to Massedonia@10.0.0.33
 
 ```
 ## Screenshots
